@@ -20,3 +20,8 @@ stack_overflow_list_dbls(pnts)
 n <- 49996
 pnts <- lapply(1:n, \(x) runif(2))
 stack_overflow_list(pnts)
+
+
+n <- 50000
+pnts <- lapply(1:n, \(x) runif(2))
+cpp_stack_overflow(pnts)
